@@ -5645,7 +5645,7 @@ static void UI_BuildServerDisplayList( qboolean force ) {
 	trap_Cvar_VariableStringBuffer( "cl_motdString", uiInfo.serverStatus.motd, sizeof( uiInfo.serverStatus.motd ) );
 	len = strlen( uiInfo.serverStatus.motd );
 	if ( len == 0 ) {
-		strcpy( uiInfo.serverStatus.motd, va( "Enemy Territory - Version: %s", Q3_VERSION ) );
+		strcpy( uiInfo.serverStatus.motd, va( "True Combat - Version: %s", Q3_VERSION ) );
 		len = strlen( uiInfo.serverStatus.motd );
 	}
 	if ( len != uiInfo.serverStatus.motdLen ) {
@@ -8332,7 +8332,7 @@ cvarTable_t cvarTable[] = {
 	{ &ui_drawCrosshair, "cg_drawCrosshair", "4", CVAR_ARCHIVE },
 	{ &ui_drawCrosshairNames, "cg_drawCrosshairNames", "1", CVAR_ARCHIVE },
 	{ &ui_drawCrosshairPickups, "cg_drawCrosshairPickups", "1", CVAR_ARCHIVE },   //----(SA) added
-	{ &ui_marks, "cg_marktime", "20000", CVAR_ARCHIVE },
+	{ &ui_marks, "cg_marktime", "60000", CVAR_ARCHIVE },
 	// JOSEPH 12-2-99
 	{ &ui_autoactivate, "cg_autoactivate", "1", CVAR_ARCHIVE },
 	// END JOSEPH
@@ -8487,7 +8487,7 @@ cvarTable_t cvarTable[] = {
 	{ NULL, "match_timeoutlength", "180", CVAR_ARCHIVE },
 	{ NULL, "match_warmupDamage", "1", CVAR_ARCHIVE },
 	{ NULL, "server_autoconfig", "0", CVAR_ARCHIVE },
-	{ NULL, "server_motd0", " ^NEnemy Territory ^7MOTD ", CVAR_ARCHIVE },
+	{ NULL, "server_motd0", " ^NTrue Combat ^7MOTD ", CVAR_ARCHIVE },
 	{ NULL, "server_motd1", "", CVAR_ARCHIVE },
 	{ NULL, "server_motd2", "", CVAR_ARCHIVE },
 	{ NULL, "server_motd3", "", CVAR_ARCHIVE },
@@ -8697,9 +8697,9 @@ static void UI_StartServerRefresh( qboolean full ) {
 	if ( ui_netSource.integer == AS_GLOBAL ) {
 		ptr = UI_Cvar_VariableString( "debug_protocol" );
 		if ( *ptr ) {
-			trap_Cmd_ExecuteText( EXEC_APPEND, va( "globalservers %d %s\n", 0, ptr ) );
+			trap_Cmd_ExecuteText( EXEC_APPEND, va( "globalservers %d %s empty full\n", 0, ptr));
 		} else {
-			trap_Cmd_ExecuteText( EXEC_APPEND, va( "globalservers %d %d\n", 0, (int)trap_Cvar_VariableValue( "protocol" ) ) );
+			trap_Cmd_ExecuteText( EXEC_APPEND, va( "globalservers %d %d empty full\n", 0, (int)trap_Cvar_VariableValue( "protocol" ) ) );
 		}
 	}
 }

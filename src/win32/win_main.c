@@ -40,10 +40,10 @@ If you have questions concerning this license or the applicable additional terms
 #include <io.h>
 #include <conio.h>
 
-#define CD_BASEDIR  "et"
-#define CD_EXE      "et.exe"
+#define CD_BASEDIR  "tc"
+#define CD_EXE      "tc.exe"
 #define CD_BASEDIR_LINUX    "bin\\x86\\glibc-2.1"
-#define CD_EXE_LINUX "et"
+#define CD_EXE_LINUX "tc"
 #define MEM_THRESHOLD 96 * 1024 * 1024
 
 static char sys_cmdline[MAX_STRING_CHARS];

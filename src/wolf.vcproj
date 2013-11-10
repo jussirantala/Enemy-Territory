@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="Windows-1252"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="9.00"
+	Version="9,00"
 	Name="wolf"
 	ProjectGUID="{B604B554-38D6-4BC8-9F7F-D6BC8719A653}"
 	TargetFrameworkVersion="131072"
@@ -270,7 +270,7 @@
 				Name="VCLinkerTool"
 				AdditionalOptions="/MACHINE:I386"
 				AdditionalDependencies="dinput8.lib winmm.lib wsock32.lib Iphlpapi.lib curl-7.12.2\lib\libcurl.lib"
-				OutputFile=".\Release/ET.exe"
+				OutputFile=".\Release/TC.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				IgnoreDefaultLibraryNames="libc"
@@ -364,7 +364,7 @@
 				Name="VCLinkerTool"
 				AdditionalOptions="/MACHINE:I386"
 				AdditionalDependencies="winmm.lib wsock32.lib .\botlib\Release\botlib.lib Iphlpapi.lib"
-				OutputFile=".\Release_Dedicated/WolfDED.exe"
+				OutputFile=".\Release_Dedicated/TCDED.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
 				IgnoreDefaultLibraryNames="libc"
@@ -943,6 +943,10 @@
 				RelativePath=".\win32\win_wndproc.c"
 				>
 			</File>
+			<File
+				RelativePath=".\wolf.rc"
+				>
+			</File>
 		</Filter>
 		<Filter
 			Name="Header Files"
@@ -1010,6 +1014,10 @@
 			</File>
 			<File
 				RelativePath=".\renderer\qgl.h"
+				>
+			</File>
+			<File
+				RelativePath=".\resource.h"
 				>
 			</File>
 			<File
@@ -1621,6 +1629,10 @@
 				>
 			</File>
 		</Filter>
+		<File
+			RelativePath=".\win32\tc2006_icon.ico"
+			>
+		</File>
 	</Files>
 	<Globals>
 	</Globals>

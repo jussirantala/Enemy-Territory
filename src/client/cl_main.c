@@ -4098,7 +4098,7 @@ void CL_GlobalServers_f( void ) {
 	to.type = NA_IP;
 	to.port = BigShort( PORT_MASTER );
 
-	sprintf( command, "getservers %s", Cmd_Argv( 2 ) );
+	sprintf( command, "getservers %s empty full", Cmd_Argv( 2 ) );
 
 	// tack on keywords
 	buffptr = command + strlen( command );
