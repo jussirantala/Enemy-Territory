@@ -585,7 +585,7 @@ issues.
 
 #ifndef PRE_RELEASE_DEMO
 //#define BASEGAME "main"
-#define BASEGAME "etmain"
+#define BASEGAME "tcmain"
 #else
 #define BASEGAME "ettest"
 #endif

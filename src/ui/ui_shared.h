@@ -34,7 +34,7 @@ If you have questions concerning this license or the applicable additional terms
 #include "../cgame/tr_types.h"
 #include "keycodes.h"
 
-#include "../../etmain/ui/menudef.h"
+#include "../../tcmain/ui/menudef.h"
 
 #define MAX_MENUNAME 32
 #define MAX_ITEMTEXT 64

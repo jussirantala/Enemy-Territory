@@ -36,7 +36,7 @@ If you have questions concerning this license or the applicable additional terms
 
 #include "q_shared.h"
 #include "bg_public.h"
-#include "../../etmain/ui/menudef.h"
+#include "../../tcmain/ui/menudef.h"
 
 #ifdef CGAMEDLL
 extern vmCvar_t cg_gameType;

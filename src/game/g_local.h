@@ -40,7 +40,7 @@ If you have questions concerning this license or the applicable additional terms
 
 // the "gameversion" client command will print this plus compile date
 #ifndef PRE_RELEASE_DEMO
-#define GAMEVERSION         "etmain"
+#define GAMEVERSION         "tcmain"
 #else
 #define GAMEVERSION         "ettest"
 #endif // PRE_RELEASE_DEMO
