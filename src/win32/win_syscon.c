@@ -590,7 +590,7 @@ void Sys_CreateConsole( void ) {
 	RECT rect;
 
 	const char *DEDCLASS = "ET WinConsole";
-	const char *WINDOWNAME = "ET Console";
+	const char *WINDOWNAME = "TC Console";
 
 	int nHeight;
 	int swidth, sheight;

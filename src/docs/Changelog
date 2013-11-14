@@ -7737,3 +7737,6 @@ update CHANGES to point to the 2.60 changes file ( html in Docs )
 	+ added latest true combat icon for the exe file
 	+ .exe names are now TC.exe and TCDED.exe
 	+ Changed master server request commands to get empty servers too. 
+	
+14-11-2013
+	+ Window class names are now "True Combat" and "TC Console"
